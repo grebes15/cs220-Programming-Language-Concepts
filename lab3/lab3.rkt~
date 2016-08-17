@@ -1,0 +1,10 @@
+#lang racket
+; Andreas Landgrebe
+; Computer Science 220
+; Lab 3
+; Make sure you run this in DrRacket
+
+; 1(a) Define a symbol r with value 10, then write a one-line expression describing
+; the surface area of a sphere of radius r
+
+(define r 10)

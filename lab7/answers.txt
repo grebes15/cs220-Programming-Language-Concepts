@@ -1,0 +1,16 @@
+Andreas Landgrebe
+Computer Science 220
+Answers to text file answer required
+
+1) Think of a concrete application for function parameters— in what real-life programming task might we find it helpful to pass a function into another function as a parameter?
+
+One concrete application for function parameters is using javascript to not have to re-write certain functions to be passed in as arguments. In javascript, one can use something called the spread operator. The spread operator allows an expression to be expanded in palces hwere multiple arguments or mutliple elemetns are expected.
+
+
+3)Note that, unlike the earlier C program example, the functions passed as parameters are not already-existing functions with names (like “sqr” or “cube”) but “nameless” functions. These could even be constructed at run time using variable values in place of the constants.
+Think of a concrete application for lambda expressions—in what real-life programming task might we find it helpful to create such “anonymous” functions at execution time?
+
+One concrete application for lamba expressions would be suppose to creating a social network application. You want to create features that enable adminstrators to perform any kind of action. For example, in the field of name, the desscription is to be able to perform action on selected members. 
+
+The following information was guided to me through the following website.
+https://docs.oracle.com/javase/tutorial/java/javaOO/lambdaexpressions.html

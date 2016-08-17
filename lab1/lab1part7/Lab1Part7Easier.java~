@@ -1,0 +1,16 @@
+/*
+Andreas Landgrebe
+Computer Science 220 Lab 1 Part 7
+
+Honor Code: I pledge that this program represents my own program code.
+*/
+
+
+public class Lab1Part7Easier {
+
+	public static void main(String[] args) {
+	
+	int x = 3 + 5;
+	}
+	
+}

@@ -1,0 +1,61 @@
+This is BibTeX, Version 0.99d (TeX Live 2015)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: report.aux
+The style file: plain.bst
+Database file #1: report.bib
+Repeated entry---line 31 of file report.bib
+ : %@misc{
+ :        ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 36 of file report.bib
+ : %@misc{
+ :        ,
+I'm skipping whatever remains of this entry
+Warning--to sort, need author or key in swiftObjectively
+Warning--to sort, need author or key in fastLook
+Warning--to sort, need author or key in openSource
+Warning--to sort, need author or key in Lynda
+Warning--to sort, need author or key in 
+Warning--to sort, need author or key in swiftvsobjectivec
+You've used 6 entries,
+            2118 wiz_defined-function locations,
+            517 strings with 4724 characters,
+and the built_in function-call counts, 1020 in all, are:
+= -- 100
+> -- 6
+< -- 0
++ -- 7
+- -- 0
+* -- 32
+:= -- 120
+add.period$ -- 17
+call.type$ -- 6
+change.case$ -- 17
+chr.to.int$ -- 0
+cite$ -- 12
+duplicate$ -- 42
+empty$ -- 139
+format.name$ -- 0
+if$ -- 251
+int.to.chr$ -- 0
+int.to.str$ -- 6
+missing$ -- 0
+newline$ -- 32
+num.names$ -- 0
+pop$ -- 61
+preamble$ -- 1
+purify$ -- 12
+quote$ -- 0
+skip$ -- 31
+stack$ -- 0
+substring$ -- 31
+swap$ -- 6
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 24
+warning$ -- 6
+while$ -- 0
+width$ -- 7
+write$ -- 54
+(There were 2 error messages)

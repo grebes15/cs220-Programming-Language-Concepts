@@ -1,0 +1,1 @@
+This is the repository for all labs and work of Computer Science 220 at Allegheny College during the Fall Semester of 2015.

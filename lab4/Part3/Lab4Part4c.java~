@@ -1,0 +1,44 @@
+/*
+Andreas Landgrebe
+Computer Science 220
+Lab 4: Control Structures
+Part c: Designing your own recursive function
+Anagram finder to find all possible anagram in a string scanned by the user
+*/
+import java.util.*;
+import java.util.Scanner;
+
+public class Lab4Part4c {
+    public void anag(String s1, String s2)  {
+
+        if(s1.length() == 0)    {
+
+            System.out.println(s2);
+
+        }
+
+        for(int i = 0; i < s1.length(); i++) {
+
+            anag(s1.substring(0, i) + s1.substring(i+1, s1.length()), s1.charAt(i) + s2);
+
+        }
+
+    }
+
+    public static void main(String[] args)  {
+	
+        Lab4Part4c ana = new Lab4Part4c();
+        
+        Scanner scan = new Scanner(System.in);
+        
+        String stringScanner;
+        
+        System.out.println("please scan in a string that is all lowercase: ");
+        
+        stringScanner = scan.nextLine();  
+		
+        ana.anag(stringScanner, "");
+
+    }
+}
+

@@ -1,0 +1,101 @@
+\documentclass{article}
+\begin{document}
+\noindent
+Andreas Landgrebe
+\\
+September 10, 2015
+\\
+\textbf{Lab 2}
+\\
+\\
+\textbf{3.Considering the following JavaScript program - what value is printed by the final line - is it ``hello'' or is it ``10''?}
+\\
+\\
+
+The values that are printed by this JavaScript program is ``10'' and then the final line is ``hello''.
+\\
+\textbf{a. Explain how JavaScript's ``function scope'' rule is interpreted.}
+\\
+\\
+JavaScript has two scopes: global and local. If a variable is declared outside the functions, then it is global scope and one is able to access this variable from anywhere in the source code. Each functions has its own scope, and any variables declared within that functions can only be accessed from that functions and any nested functions. Because local scope in JavaScript is created by functions, its also called function scope.
+\\
+\\
+\textbf{b. State whether or not JavaScript requires ``declare before use'' for variables}
+\\
+\\
+JavaScript does not require declare before use for variables as long as it is assigned somewhere in the source code.
+\\
+\\
+\textbf{5. Look at the stack structure in Java}
+\\
+\textbf{In your document, ``Draw'' the portion of the frame containing the parameters and local variables of function f}
+\\
+\\
+\begin{enumerate}
+\item load the int value i in frame location 1
+\item load the int value j in frame location 2
+\item add i and j together
+\item store int value into variable 9
+\item load the double a from local variable 3
+\item load the double b from local variable 5
+\item multiple the two doubles
+\item store the double value prod into local variable 10
+\item load the int (or char) p from local variable 7
+\item store the int (or char) max  in local variable 12
+\item load the int (or char) p from local variable 7
+\item load the int (or char) q from local variable 8
+\item if the int (or char) value p of local variable 7 is less than the int (or char) q value of local variable 8, branch to instruction at branchoffset.
+\item load the int (or char) q value from local variable 8
+\item store the int (or char) max value from local variable 12
+\item return
+\end{enumerate}
+\textbf{6. A stack machine computation}
+\\
+\textbf{``Draw'' the frame for f, then ``draw'' the contents of the stack after each line of bytecode in function f.}
+\\
+\\
+\begin{enumerate}
+\item load the int value x 10 into local variable 1
+\item load the int value y 20 into local variable 2
+\item add x and y together to get 30
+\item load the int value x 10 into local variable 1
+\item load the int value y 20 into local variable 2
+\item add x and y together to get 30
+\item multiply x and y together to get 900
+\item load the int value x into local variable 1
+\item load the int value y into local variable 2
+\item add x and y together to get 30
+\item load the int value x into local variable 1
+\item load the int value y into local variable 2
+\item add x and y together to get 30
+\item multiply x and y together to get 900
+\item add x and y together to get 1800
+\item store the final value of 1800 into local variable 3
+\end{enumerate}
+\textbf{One more look at optimization.}
+\\
+\textbf{How could this bytecode be optimized, i.e., shortened to fewer instructions? Answer this question, explaining and showing your optimized bytecode, in your document.}
+\\
+\\
+This bytecode is as short as it is due to the fact that you would need to load the int values x and y each time in order to do any adding and multiplying. However, you can optimize this code. The following will optimize the code
+\begin{enumerate}
+\item iconst\_2
+\item iload\_1
+\item iconst\_2
+\item ixor
+\item iconst\_2
+\item iload\_1
+\item imul
+\item iload\_2
+\item imul
+\item iadd
+\item iload\_2
+\item iconst\_2
+\item ixor
+\item iadd
+\item imul
+\item istore\_3
+\item return
+\end{enumerate}
+Instead of loading the variables of x and y constantly, it would be more effective to use the iconst instruction to load the int value of 2 to be used to calculate. Stack3.java is shown in the repository to show the modified and improved code that will give you the same result by a different way. 
+\end{document}

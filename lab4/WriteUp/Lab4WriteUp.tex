@@ -1,0 +1,54 @@
+\documentclass{article}
+
+\usepackage{tabto}
+\usepackage{enumitem}
+\begin{document}
+\noindent
+Andreas Landgrebe
+\\
+Computer Science 220
+\\
+Lab 4: Controlling Structures
+\\
+Part 2: Write a step-by-step description of the bytecode
+\\
+\begin{enumerate}
+\NumTabs{6}
+\item \textbf{bipush 10} \tab{push the constant 10 onto the stack}
+\\
+\item \textbf{istore\_1} \tab{pop the 10 and save it in location 1 (i = 10)}
+\\
+\item \textbf{bipush 20} \tab{push 20 onto the stack}
+\\
+\item \textbf{istore\_2} \tab{[pop the 20 and save it in location 2 (j = 20)}
+\\
+\item \textbf{iconst\_0} \tab{push 0 onto the stack}
+\\
+\item \textbf{istore\_3} \tab{pop 0 and save it in location 3 (k = 0)}
+\\
+\item \textbf{iload\_1} \tab{push contents of location 1 onto stack (i)}
+\\
+\item \textbf{bipush 10} \tab{push constant 10 onto stack}
+\\
+\item \textbf{if\_icmple 15} pop two element and compare with ``\textless='' (if(i \textless= 10))
+\\
+\tab{if test is true, go to line 15}
+\\
+\item \textbf{iload\_2} \tab{[test was false] load contents of location 2 onto stack (j)}
+\\
+\item \textbf{bipush 20} \tab{push the constant 20 onto stack}
+\\
+\item \textbf{if\_icmpne 15} pop two elements and compare with ``!='' (if j !== 20)
+\\
+\tab{if test is true, go to line 15}
+\\
+\item \textbf{bipush 100} \tab{[test was false] push the constant 100 onto the stack}
+\\
+\item \textbf{istore\_3} \tab{pop stack and store in location 3(k = 100)}
+\\
+\item \textbf{iload\_3} \tab{push contents of location 3 onto stack (return k)}
+\\
+\item \textbf{ireturn}  \tab{}
+
+\end{enumerate}
+\end{document}

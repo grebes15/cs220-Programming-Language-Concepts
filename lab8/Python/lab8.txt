@@ -1,0 +1,13 @@
+Andreas Landgrebe
+Lab 8 Answers
+2. If you were writing a guide for Java programming explaining to them how to convert their Java class into classes in one of the languages C++, Python, or C#, choose five things you would mention in such a guide. (I've already mentioned the one about Python contructors so you aren't allowed to count that if you chose Python.) These can be syntax, or input/output commands, or anything you think a Java programmer would need to modify to convert a Java class into a class in your chosen language.
+
+1) If one is converting a Java class into a Python class, one thing one would need to know is the namming of specific files. In java, erorrs will arise if the class file does not have the same name as the file in the directory. In python, that is not the case. One can call the file whatever one would like to name it and have multiple class files in python. In java, one can have multiple classes in one file but it is a little trickier to do so.
+
+2) Java does not support keyboard input, a package has to be imported in order to do so. In python, keybaord input is supported. In Java, one has to write "import java.util.Scanner;" at the beginning of the file, then has to call the Scanner object as such: "Scanner scan = new Scanner(System.in);", and then one can Scan input from a keyboard in the Java programming language. In python all one has to do is write a varible that is being passed and then the keywords: "raw_input".
+
+3) In python, constructors have to be called __init__. In java, constructors have to be named whatever the file name is. 
+
+4) In Java, all instance variables need to be pre-declared before using them. For example, an instance variable in java has to be either a int or double or any other instance variable. In python, there is no such thing as variable declaration or variable initialization. 
+
+5)In python, all methods have to have a parameter of self. In java, all methods do not necessarily need to have parameters. 

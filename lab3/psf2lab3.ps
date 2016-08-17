@@ -1,0 +1,38 @@
+%!
+% Andreas Landgrebe 
+% Lab 3 PostScript Second File 
+% 24 September 2015.
+% Composition of my own devising
+
+
+/x 100 def
+/y 200 def
+/dre 150 def
+%drawing of first line
+x y moveto
+500 dre rlineto
+stroke
+
+//x x 150 add def % x = x + 150
+/y y 250 add def % y = y + 250
+%drawing of second line on bottom left of page
+dre x moveto
+0 y lineto
+stroke
+
+/x x 250 sub def % x = x - 250
+/y y 100 add def % y = y + 100
+%drawing of third line top left of page
+x y moveto
+137 y lineto
+stroke
+
+
+/x x 600 add def % x = x + 600
+/y y 300 sub def % y = y - 300
+%Drawing last line at the right middle side of page
+x y moveto
+750 dre rlineto
+stroke
+showpage
+

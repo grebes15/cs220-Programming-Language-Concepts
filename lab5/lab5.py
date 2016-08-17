@@ -1,0 +1,77 @@
+#Andreas Landgrebe
+#Computer Sciecne 220
+#Lab 5: Lists in Python
+
+
+#Part 1
+#Write a Python function that takes a list and an item and return the number of occurrences of that item in the list (possibly zero).
+def count(x,y):
+	c = 0 #set the counter to zero
+	for i in x: #for all items in the list x
+		if i == y: #if the item is found in the list
+			c += 1 #add 1 to the counter
+	return c #return how many of that item is in the list
+
+a = [1,2,4,3,2,4,5,3,2,2,3,2,2]
+print count(a,2) #print how many 2's are in the list a
+
+print count(a,1) #print how many 1's are in the list a 
+
+print count (a,4)#print how many 4's are in the list a
+
+print count (a,6)#print how many 6's are in the list a
+
+#Part 2
+#Write a Python that takes two lists and returns a list containing all elements taht are in both lists (don't worry about duplicates).
+
+def common(a,b):
+	result = [] #set the result to be an empty list to start
+	for i in a: #for all items in a
+		if i in b: #for all itmes in b
+			result.append(i) #adding an item to the end of the list
+			#result[len(result):] = [i] #you could also do this
+	return result #return what is in both lists
+	
+c = [3,2,5,4,6,7,4]
+d = [7,2,8,9,4]
+
+print common(c,d)
+
+#Part 3
+#Write a function taht takes two lists and returns a list containing all elements that are in one or the other list, bot NOT both.
+
+def notcommon(a,b):
+	result = [] #set the result to be an empty list to start
+	for i in a: # for all items in a
+		if i not in b: #if an item is not in b
+			result = set(a) - set(b) | set(b) - set(a)
+#assign the list to the items that are in a or b but not both
+	return result #retuwrn the list of the items
+	
+print notcommon(c,d) #print the list of items that are in c or d but not both
+
+e = [1,4,5,7,3,9,5,3,7,3]
+f = [8,2,4,1]
+#list e and f are used to test out for Part 3
+print notcommon(e,f) #print the list of items that are in e or f but not both
+
+#Part 4
+#Write a function tayht takes a list and an integer k and rotates the list k positions to the left. (If k is negative, rotate to the right by -k positions)
+
+def rotate(a,k):
+	result = [] #set the result to be an empty list to start
+	for i in range(len(a)): #for the items in the length of list a
+		return a[k:] + a[:k] #return the list with where k is starting and end where is ending. In order words, if k is 1 then shift to the right. If k is -1, then shift to the left 
+
+g = [1,2,3,4] #just another list to test
+print rotate(g,1) #print the list where you rotate the list one spot to the right
+print rotate(g,-1) #print the list where you roatate the list one spot to the left
+
+
+
+
+
+
+
+
+
